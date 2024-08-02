@@ -1,0 +1,16 @@
+services:
+  voiceproxy:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    container_name: voiceproxy
+    ports:
+      - "24454:24454/udp"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile
+      - voiceproxy_data:/data
+      - voiceproxy_config:/config
+volumes:
+  voiceproxy_data:
+  voiceproxy_config:

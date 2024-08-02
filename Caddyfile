@@ -1,0 +1,11 @@
+{
+    layer4 {
+        udp/:VOICE_PORT_HERE {
+            route {
+                proxy {
+                    upstream udp/BACKEND_HERE:VOICE_PORT_HERE
+                }
+            }
+        }
+    }
+}
