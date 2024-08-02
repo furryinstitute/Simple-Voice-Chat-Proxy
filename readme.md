@@ -19,8 +19,8 @@ sudo sh install-docker.sh
 
 2. **Clone the Repository**:
 
-3. **Configure Caddyfile**:
-Put your backend server IP and voice chat port in the Caddyfile. Bonus points if using Tailscale or other private networking solutions.
+3. **Configure Caddyfile and Compose file**:
+Put your backend server IP and voice chat port in the Caddyfile and compose file (Just port for compose file). Bonus points if using Tailscale or other private networking solutions.
 
 4. **Configure Simple Voice Chat Config**:
 In your Minecraft server, edit the Simple Voice Chat config to point to the IP of the Caddy server and the port you specified in the Caddyfile.
